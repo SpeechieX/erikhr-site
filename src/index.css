@@ -1,0 +1,505 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Cormorant Unicase", serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* 222A3B */
+  /* 495869 */
+  /* 98998B */
+  /* C9BDA7 */
+  /* EFF2E4 */
+}
+
+* {
+  box-sizing: border-box;
+  color: #a7afb1;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+p,
+span,
+div {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+a:visited,
+a:active,
+a:link {
+  text-decoration: none;
+  color: #393939;
+}
+
+/* CONTAINER */
+
+.container {
+  display: flex;
+  height: fit-content;
+  min-height: 80vh;
+  width: 100vw !important;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto !important;
+  overflow: auto;
+
+  /* border: 1px solid red; */
+}
+
+.container-non-flex {
+  display: absolute;
+  height: fit-content;
+  min-height: 80vh;
+  width: 100vw !important;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto !important;
+
+  border: 1px solid red;
+}
+
+.container-adj {
+}
+
+/* HEADER */
+
+.side-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.logo-text {
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.logo-text-heading {
+  color: white;
+  margin-top: 5px;
+}
+
+/* NAVIGATION */
+
+.header-body {
+  /* Keep invisible border to maintain fit */
+  border: 3px solid #ffffff00;
+  min-height: 100vh;
+  height: fit-content;
+}
+
+.upper-navigation {
+  height: 80px;
+  /* border: 1px solid black; */
+  position: sticky;
+  margin: 0 auto;
+  top: 0;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 1px dotted #ffffff10;
+  z-index: 100;
+}
+
+.border-nav-shadow {
+  border-bottom: 2px solid #ffffff20;
+  box-shadow: inset;
+}
+
+.header-content {
+  /* border: 1px solid red; */
+}
+
+.header-link-text {
+  font-weight: 600;
+}
+.header-link-text:hover {
+  font-weight: 600;
+  color: rgb(106, 0, 116);
+}
+
+.navigation-list-container {
+  /* border: 1px solid black; */
+  border-radius: 12.5px;
+}
+
+@media screen and (max-width: 780px) {
+  /* HIDE ON MEDIUM SCREENS AND BELOW*/
+  .navigation-list-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 779px) {
+  .navigation-list-container-mobile {
+    display: none;
+  }
+}
+
+.list-item-body {
+  border-radius: 12.5px;
+  height: 35px;
+  padding: 6px 10px 10px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.nav-list-item {
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* MOBILE DRAWER NAVIGATION */
+
+.drawer-body {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mobile-logo-container {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  width: 200px;
+}
+
+.drawer-link-text-mobile {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+/* FOOTER */
+
+.footer-container {
+  bottom: 0;
+}
+
+.w-address {
+  background-color: #393939;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 4.5px;
+}
+
+.main-icons {
+  font-size: 1.5em !important;
+  cursor: pointer;
+}
+.top-icons {
+  font-size: 1.5em !important;
+  cursor: pointer;
+  color: black !important;
+}
+
+.tip-text {
+  font-weight: 400;
+}
+
+/* HOME PAGE THREEJS */
+
+.three-container {
+  /* border: 1px solid red; */
+  width: auto;
+}
+
+.tiny-text-row {
+  /* border: 1px solid blue; */
+}
+.tiny-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.canvas_wrapper {
+  height: 50vh;
+  animation: fadeIn 2s;
+  width: auto;
+  min-width: 50vw;
+}
+
+/* About */
+
+.bio-image {
+  max-height: 500px;
+}
+
+.bio-container {
+  width: auto;
+  padding: 15px;
+}
+
+.bio-p-one {
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* border: 1px solid blue; */
+  max-width: 800px;
+}
+
+.bio-text {
+  font-weight: 700;
+  line-height: 3.5rem;
+  letter-spacing: 0.04rem;
+  text-justify: distribute;
+}
+
+.column-text {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 780px) {
+  .bio-text {
+    font-size: 22px;
+    line-height: 1.3rem;
+  }
+}
+
+.my-toolbox {
+  height: 300px;
+}
+
+.button-grid {
+  height: 100px;
+  text-align: center;
+}
+
+.button-div {
+  /* min-height: 45px; */
+  width: auto;
+  min-width: 120px;
+  border: 2px solid white;
+  border-radius: 12.5px;
+  padding: 15px 5px 10px 5px;
+  margin: 15px 15px 15px 5px;
+  justify-content: center;
+  align-items: center;
+  color: black !important;
+  font-weight: 600;
+}
+
+.button-div:hover {
+  /* border: 1px solid black; */
+  color: white !important;
+}
+
+.button-div:nth-child(odd):hover {
+  background-color: rgb(1, 86, 122);
+}
+.button-div:nth-child(even):hover {
+  background-color: rgb(175, 29, 161);
+}
+
+/* GALLERY */
+
+.gallery-container {
+  height: 550px;
+  width: auto;
+  /* border: 1px solid red; */
+}
+
+.display-box {
+  /* border: 1px solid grey; */
+  height: 500px;
+  width: 500px;
+}
+
+.display-box-modal {
+  height: auto;
+  width: auto;
+  display: flex;
+  background-size: 100% 100%;
+}
+
+/* In Mobile, Make sure Image is Big Enough for Viewing Pleasure*/
+@media screen and (max-width: 780px) {
+  .display-box-modal {
+    min-width: 370px !important;
+    min-height: 370px;
+  }
+}
+
+.gallery-thumbnail-library {
+  min-height: 500px;
+  width: auto;
+  margin-right: 10px;
+  /* border: 1px solid green; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.gallery-item {
+  min-width: 150px;
+  min-height: 150px;
+}
+.thumbnail-container {
+  min-width: 150px;
+  min-height: 150px;
+  overflow: hidden;
+  margin: 2.5px;
+}
+
+@media screen and (max-width: 780px) {
+  /* Hide Desktop Display in Mobile View*/
+
+  .display-box {
+    display: none;
+  }
+
+  .gallery-thumbnail-library {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+
+  /*CENTER THE GALLERY COLUMNS IN MOBILE*/
+
+  .gallery-container {
+    margin: 0 auto;
+    justify-content: center;
+    width: 90vw;
+  }
+
+  /* Expand Thumbnail Size*/
+
+  .gallery-item {
+    min-width: 150px;
+    min-height: 150px;
+  }
+  .thumbnail-container {
+    min-width: 150px;
+    min-height: 150px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-thumbnail-library {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
+
+/* CONTACT */
+
+.name-input {
+  border: 1px solid #ffffff50;
+  border-radius: 5.5px;
+  margin-top: 10px;
+  color: white;
+  height: 30px;
+  width: 350px;
+  background-color: #00000070;
+  padding: 9px;
+}
+
+.email-input {
+  border: 1px solid #ffffff50;
+  border-radius: 5.5px;
+  margin-top: 10px;
+  color: white;
+  height: 30px;
+  width: 350px;
+  background-color: #00000070;
+  padding: 9px;
+}
+
+.content-input {
+  border: 1px solid #ffffff50;
+  border-radius: 5.5px;
+  margin-top: 10px;
+  color: white;
+  height: 30px;
+  width: 350px;
+  min-height: 200px;
+  background-color: #00000070;
+  padding: 9px;
+}
+
+.send-button {
+  width: 150px;
+  min-width: 120px;
+  border: 2px solid white;
+  border-radius: 12.5px;
+  padding: 15px 5px 10px 5px;
+  margin: 15px 15px 15px 5px;
+  justify-content: flex-start;
+  align-items: center;
+  color: black !important;
+  font-weight: 600;
+}
+
+.send-button:hover {
+  color: white !important;
+  background-color: black;
+}
