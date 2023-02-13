@@ -72,7 +72,7 @@ const NavigationBar = () => {
 							<div className="list-item-body">
 								<li className="mb-1 mx-4 nav-list-item">
 									<a className="header-link-text" href="/about">
-										Profile
+										About
 									</a>
 								</li>
 							</div>
