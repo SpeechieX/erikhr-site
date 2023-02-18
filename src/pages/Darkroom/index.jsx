@@ -8,7 +8,7 @@ const darkroomImage = "https://i.imgur.com/HieZtQW.jpg";
 function Darkroom() {
 	const [timerDate, setTimerDate] = useState(new Date());
 	function updateTimer() {
-		let future = Date.parse("feb 15, 2023 12:30:00");
+		let future = Date.parse("feb 20, 2023 12:30:00");
 		let now = new Date();
 		let diff = future - now;
 
