@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body class="article-body">
+    <header>
+      <div class="article-header-content">
+        <div class="article-header-row">
+          <h3 class="article-title">
+            Linux Commands That Will Make Your Life a Lot Easier
+          </h3>
+          <h6 class="text-black text-left mt-5 article-author">
+            By Erik H Robertson
+          </h6>
+          <h6 class="article-date">Published February 19, 2023</h6>
+        </div>
+      </div>
+    </header>
+    <main class="article-main-section">
+      <section class="article-section">
+        <div class="divider"></div>
+        <p class="article-paragraph">
+          I've always been a big fan of learning Linux Command Line. Starting
+          out with photography, I was always curious if there we're ways I could
+          streamline tasks. Lately I've been digging for new ways that I can tap
+          into Linux to return the information that I want. So, here's a few
+          Linux Commands that I've found that make life a lot easier.
+        </p>
+        <h1 class="article-title mb-5">
+          Search for all PID's with Webcam Access (MacOS)
+        </h1>
+
+        <pre class="article-code-snippet">
+            sudo lsof | grep "AppleCamera\|iSight" | awk '{print $2}' | sort -u
+        </pre>
+        <p class="article-paragraph mt-5">
+          This command will use lsof to list all open files, then filter the
+          results to only show processes that have opened a webcam device file
+          (either AppleCamera or iSight on macOS). The awk command will extract
+          the second field (which is the PID) from the output, and the sort -u
+          command will sort the PID's and remove duplicates.
+        </p>
+        <h1 class="article-title mb-5 mt-6">
+          Iterate actions over multiple files by using "for"
+        </h1>
+        <p class="article-paragraph mt-5">
+          This is a great method for instances when you need to perform actions
+          over batches of files that would be otherwise cumbersome if performed
+          individually.
+        </p>
+        <pre class="article-code-snippet mb-6">
+          for file in *.txt; do 
+          mv -- "$file" "${file%.txt}.text"
+          done
+          
+          # Rename all *.txt to *.text
+        </pre>
+        <h1 class="article-title mb-5 mt-8">
+          Check all IP's on the Current Network
+        </h1>
+        <p class="article-paragraph mt-5 mb-5">
+          Joining a public network? This is a great way to see all of your
+          compadres who are on the same network that you're connected to. Also,
+          the address that's in position 0, is usually the IP address of the
+          router itself. If you copy it and paste it into the browser, it will
+          usually lead you right to the router login page, better known as the
+          router management interface.
+        </p>
+        <pre class="article-code-snippet mt-5 mb-6">
+            arp -a -ll
+        </pre>
+        <h1 class="article-title mb-5 mt-16">
+          Transfer files from Local Directory to Remote Directory
+        </h1>
+        <p class="article-paragraph mt-5 mb-5">
+          Who needs WebFTP when you can just use SSH?
+        </p>
+        <pre class="article-code-snippet">
+          # transfer all files recursively from [local] to [remote destination]
+
+            scp -r ./mylocalfolder/* myremoteusername@myserveraddress.com:~/destination/of-your-choice
+        </pre>
+      </section>
+    </main>
+    <!-- <footer></footer> -->
+  </body>
+</html>

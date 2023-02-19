@@ -1,10 +1,10 @@
 import React from "react";
 import { ReactDOM, createRoot } from "react-dom/client";
 import {
-	createBrowserRouter,
-	createRoutesFromElements,
-	Route,
-	RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
 } from "react-router-dom";
 
 import "./index.css";
@@ -16,44 +16,48 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Darkroom from "./pages/Darkroom";
 import Gallery from "./pages/Gallery";
-
+import CodeJournal from "./pages/CodeJournal";
 const NavigationContext = React.createContext();
 
 const location = "/";
 
 const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Home />,
-	},
-	{
-		path: "/contact",
-		element: <Contact />,
-	},
-	{
-		path: "/about",
-		element: <ProfileTemplate />,
-	},
-	{
-		path: "/darkroom",
-		element: <Darkroom />,
-	},
-	{
-		path: "/gallery",
-		element: <Gallery />,
-	},
-	{
-		path: "*", 
-		element: <Home/>
-	}
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/about",
+    element: <ProfileTemplate />,
+  },
+  {
+    path: "/darkroom",
+    element: <Darkroom />,
+  },
+  {
+    path: "/gallery",
+    element: <Gallery />,
+  },
+  {
+    path: "/code-journal",
+    element: <CodeJournal />,
+  },
+  {
+    path: "*",
+    element: <Home />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
-	<React.StrictMode>
-		<NavigationContext.Provider value={location}>
-			<Header>
-				<RouterProvider router={router} />
-			</Header>
-		</NavigationContext.Provider>
-	</React.StrictMode>,
+  <React.StrictMode>
+    <NavigationContext.Provider value={location}>
+      <Header>
+        <RouterProvider router={router} />
+      </Header>
+    </NavigationContext.Provider>
+  </React.StrictMode>
 );

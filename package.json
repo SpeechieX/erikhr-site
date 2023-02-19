@@ -17,6 +17,7 @@
     "@reduxjs/toolkit": "^1.9.1",
     "formik": "^2.2.9",
     "framer-motion": "^8.5.2",
+    "html-react-parser": "^3.0.9",
     "localforage": "^1.10.0",
     "locomotive-scroll": "^4.1.4",
     "match-sorter": "^6.3.1",

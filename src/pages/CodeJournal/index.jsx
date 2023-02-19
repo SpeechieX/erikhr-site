@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import Article from "./Article";
+import Journal from "./Journal";
 
 const darkroomDetails =
   "The Darkroom is a place for photographic exploration.  A place where I won't post just photographs, but the process and the stories behind them. I'm a bit exhausted from the typical format, so this will be a place to exercise something new.";
 
 const darkroomImage = "https://i.imgur.com/HieZtQW.jpg";
 
-function Darkroom() {
+function CodeJournal() {
   const [timerDate, setTimerDate] = useState(new Date());
   function updateTimer() {
-    let future = Date.parse("feb 20, 2023 12:30:00");
+    let future = Date.parse("feb 21, 2023 12:30:00");
     let now = new Date();
     let diff = future - now;
 
@@ -47,15 +47,15 @@ function Darkroom() {
     <div className="container flex flex-col mx-auto">
       <div className="coming-soon-image mx-auto ">
         <h1 className="in-process mt-10 mb-2 text-slate-800 prose prose-2xl">
-          In Process...
+          Next Post Coming in...
         </h1>
         <div className="timer-container mt-1">
           <div id="timer"></div>
         </div>
-        <Article />
+        <Journal />
       </div>
     </div>
   );
 }
 
-export default Darkroom;
+export default CodeJournal;
