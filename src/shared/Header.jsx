@@ -129,7 +129,7 @@ const NavigationBar = () => {
                         <img
                           src={logo}
                           alt="eriklovescode.work"
-                          className="mr-4 -mt-2 mx-auto"
+                          className=" mr-4 -mt-2 mx-auto"
                         />
                       </div>
                       <div className="mobile-list-container mt-10">

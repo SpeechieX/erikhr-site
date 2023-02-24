@@ -276,8 +276,15 @@ a:link {
   align-items: center;
 }
 
+@media screen and (max-width: 376px) {
+  .header-logo {
+    max-width: 100px;
+    height: auto;
+    /* border: 1px solid red; */
+  }
+}
+
 .mobile-logo-container {
-  /* border: 1px solid red; */
   margin: 0 auto;
   width: 200px;
 }
@@ -468,6 +475,13 @@ a:link {
   width: auto;
   display: flex;
   background-size: 100% 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .display-box-modal {
+    max-height: 400px;
+    width: auto;
+  }
 }
 
 /* In Mobile, Make sure Image is Big Enough for Viewing Pleasure*/

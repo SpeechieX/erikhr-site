@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { ReactDOM, createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
@@ -17,7 +17,7 @@ import Home from "./pages/Home";
 import Darkroom from "./pages/Darkroom";
 import Gallery from "./pages/Gallery";
 import CodeJournal from "./pages/CodeJournal";
-const NavigationContext = React.createContext();
+// const ThemeContext = React.createContext();
 
 const location = "/";
 
@@ -54,10 +54,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <NavigationContext.Provider value={location}>
-      <Header>
-        <RouterProvider router={router} />
-      </Header>
-    </NavigationContext.Provider>
+    <Header>
+      <RouterProvider router={router} />
+    </Header>
   </React.StrictMode>
 );
