@@ -26,3 +26,53 @@ export const skills = [
   "Python",
   "RabbitMQ",
 ];
+
+export const employers = [
+  {
+    id: 1,
+    title: "Internal Revenue Service",
+    date: "",
+    info: "U.S. Department of Treasury ",
+    position: "Computer Operator (GS-0223)",
+    stack: "Jetvision",
+    summary: ["", ""],
+  },
+  {
+    id: 2,
+    title: "Bighead",
+    date: "",
+    info: "Bighead is a Web3 Studio",
+    position: "Frontend Engineer",
+    stack:
+      "Svelte, Node.js, Ethers.js, Hardhat, Truffle, Ganache, AWS Lambda, Netlify.",
+    summary: [
+      "Conceptualized, Designed, Devleoped and Deployed a remix concept for the original OniRonin.io Website",
+      "Web3 Web Access",
+    ],
+  },
+  {
+    id: 3,
+    title: "Robertson Analytics",
+    date: "",
+    info: "Robertson Analytics is a company that writes code for ...",
+    position: "Principal Engineer",
+    stack: "Various",
+    summary: [
+      "Design, Develop and Deploy full stack applications with an emphasis on data modeling",
+      "App Decoupling",
+    ],
+  },
+  {
+    id: 4,
+    date: "",
+    title: "GoTeddy",
+    info: "GoTeddy is a Food Delivery App available in the Democratic Republic of Laos",
+    stack: "React + React-Native, Node, MongoDB, Redis, PubNub",
+    summary: [
+      "Developed IT Roadmaps aligned with the companies corporate strategy",
+      "Designed, Developed and Deployed features for iOS and Android",
+      "Worked with stakeholders ",
+      "Worked with banks to integrate payment systems into the application",
+    ],
+  },
+];

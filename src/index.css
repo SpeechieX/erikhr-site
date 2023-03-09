@@ -456,6 +456,36 @@ a:link {
   background-color: rgb(175, 29, 161);
 }
 
+.table-section {
+  height: 350px;
+}
+.table-info-section {
+  height: 350px;
+}
+
+.table-display-body {
+  width: 100%;
+  margin-left: 50px;
+}
+
+.display-project-title {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.add-border {
+  border: 1px solid #000;
+}
+
+.display-project-stack,
+.display-project-summary {
+  /* font-family: "Courier New", Courier, monospace; */
+}
+
+.display-project-stack {
+  color: teal;
+}
+
 /* PROJECT SECTION */
 
 .project-section {
