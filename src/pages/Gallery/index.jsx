@@ -55,7 +55,7 @@ export default function Gallery() {
         <div className="gallery-container flex flex-row">
           <div className="gallery-thumbnail-library mt-4">
             {images.map((im, i) => (
-              <div className="thumbnail-container">
+              <div className="thumbnail-container" key={i}>
                 <img
                   src={im}
                   className="gallery-item"

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Journal from "./Journal";
+import ProjectSection from "./Projects/ProjectSection";
 
 const darkroomDetails =
   "The Darkroom is a place for photographic exploration.  A place where I won't post just photographs, but the process and the stories behind them. I'm a bit exhausted from the typical format, so this will be a place to exercise something new.";
@@ -51,6 +52,7 @@ function CodeJournal() {
         </h1> */}
         <div className="timer-container mt-1">
           {/* <div id="timer"></div> */}
+          <ProjectSection />
         </div>
         <Journal />
       </div>

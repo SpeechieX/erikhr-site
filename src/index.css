@@ -456,6 +456,33 @@ a:link {
   background-color: rgb(175, 29, 161);
 }
 
+/* PROJECT SECTION */
+
+.project-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row;
+  width: auto;
+  max-height: 700px;
+  overflow: scroll;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-label {
+  display: flex;
+  border-radius: 10.5px;
+  border: 1px dotted lightgray;
+  max-height: 100px;
+  height: 100px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 /* GALLERY */
 
 .gallery-container {

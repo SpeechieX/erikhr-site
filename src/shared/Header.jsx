@@ -238,7 +238,7 @@ const NavigationBar = () => {
                         className="hide-phone"
                       />
                     </div>
-                    +66 65 605 4672
+                    +1 909-616-1972
                   </h6>
                 </li>
               </div>
@@ -292,9 +292,7 @@ const Footer = () => {
             </a>
           </ul>
         </div>
-        <h6 className="tip-text mb-3 text-slate-600">
-          Buy me a coffee or a convertible :{" "}
-        </h6>
+        <h6 className="tip-text mb-3 text-slate-600">Buy Me a Coffee </h6>
         <pre className="w-address">
           0xaC25bC3589a60dA8Fde42A04934eCB2dd2E83fb7
         </pre>
