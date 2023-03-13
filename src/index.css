@@ -99,7 +99,19 @@ a:link {
   font-style: bold;
 }
 
-.entry-type {
+.loading {
+  max-height: 100vh !important;
+  max-width: 100vw !important;
+  overflow: hidden;
+}
+
+.loading-overlay {
+  z-index: 100;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  background-color: white;
 }
 
 .phone-icon .hide-phone {
@@ -385,8 +397,9 @@ a:link {
 }
 
 .bio-container {
-  width: auto;
+  /* width: auto; */
   padding: 15px;
+  justify-content: center;
 }
 
 .bio-p-one {
@@ -712,6 +725,28 @@ a:link {
     /* border: 2px solid yellow; */
   }
 }
+
+.project-grid-container {
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+}
+
+@media screen and (max-width: 900px) {
+  .project-grid-container {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(10, auto);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project-grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    width: 300px;
+  }
+}
 /* CONTACT */
 
 .name-input {
@@ -768,8 +803,8 @@ a:link {
 
 /* PROFILE PAGE STYLE */
 .profile-container {
-  /* border-left: 1px solid black;
-  border-right: 1px solid red; */
+  /* border-left: 1px solid black; */
+  /* border-right: 1px solid red; */
 }
 
 .profile-upper {
@@ -794,8 +829,20 @@ a:link {
   border-radius: 120px;
 }
 
-.profile-upper {
+.project-img {
+  border-radius: 9px;
 }
+.project-desc {
+  min-height: 50px;
+  max-height: 50px;
+}
+
 .profile-stats-container {
   /* border: 1px solid black; */
+}
+
+.project-outline {
+  border-radius: 9px;
+  overflow: hidden;
+  border: 0.5px dashed darkgray;
 }

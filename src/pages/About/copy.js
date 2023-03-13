@@ -26,3 +26,71 @@ export const skills = [
   "Python",
   "RabbitMQ",
 ];
+
+export const projects = [
+  {
+    type: "Code",
+    title: "TinyShop",
+    desc: "A small toy shop that has all the cart functionality on one page.",
+    img: "https://i.imgur.com/7Kw5D64.png",
+    stack: ["React", "Redux", "TailwindCSS"],
+    url: "https://tinyshop.eriklovescode.work",
+  },
+  {
+    type: "Code",
+    title: "Carbon Presets",
+    desc: "AI Art Presets that help you create artwork for products, promo and personal projects.",
+    img: "https://i.imgur.com/GRYeOsa.jpg",
+    stack: ["Javascript", "Node", "Lambda", "Stripe"],
+    url: "https://carbonpresets.com",
+  },
+  {
+    type: "Product",
+    title: "Speechie For President",
+    desc: "My personal blog for photography, travel, and more.",
+    img: "https://i.imgur.com/Xucv744.jpg",
+    stack: ["Javascript", "JQuery", "SASS", "PHP"],
+    url: "https://speechieforprez.com",
+  },
+
+  {
+    type: "Code",
+    title: "BrerRabbit.io",
+    desc: "A corporate consultancy firm committed to assisting blockchain based entrepreneurs.",
+    img: "https://i.imgur.com/Ohpb0la.jpg",
+    stack: ["Javascript", "JQuery", "CSS", "HTML"],
+    url: "https://brerrabbit.io",
+  },
+  {
+    type: "Product",
+    title: "GoEco",
+    desc: "A feature I built in collaboration with the United Nations and GoTeddy to offer sustainable food packaging to Lao PDR.",
+    img: "https://i.imgur.com/VRHXBNt.png",
+    stack: ["React-Native", "Node", " MongoDB"],
+    url: "https://www.undp.org/laopdr/blog/goeco-friendly-food-packaging",
+  },
+  {
+    type: "Code",
+    title: "USCI",
+    desc: "A faux criminal database made with RoR.",
+    img: "https://i.imgur.com/gQoELlq.png",
+    stack: ["Ruby on Rails", "Javascript", "CSS", "HTML"],
+    url: "https://github.com/speechiex/usci",
+  },
+  {
+    type: "Code",
+    title: "OniRonin.io",
+    desc: "The second version of the OniRonin.io Web3 website by the notable BigHeadClub.",
+    img: "https://i.imgur.com/dWpGyM3.png",
+    stack: ["Svelte", "Ethers.js", "TailwindCSS"],
+    url: "https://onironin.io",
+  },
+  {
+    type: "Code",
+    title: "Materia Water",
+    desc: "An imaginary bottled water concept based in the mountains of Shannara. [COMING SOON]",
+    img: "https://i.imgur.com/eKF5dWM.jpg",
+    stack: ["React", "TailwindCSS"],
+    url: "https://materia.eriklovescode.work",
+  },
+];

@@ -13,7 +13,6 @@ const style = {
   bgcolor: "background.paper",
   boxShadow: 24,
   p: 0.5,
-  //   width: "auto",
   height: "65vh",
   overflow: "auto",
   display: "flex",
@@ -36,8 +35,6 @@ export default function Gallery() {
   async function handleImage(s) {
     setCurrentImage(s);
     handleModal();
-    // console.log(s);
-    // console.log(selectedImage);
   }
   async function handleLoad(status, index, id) {
     // console.log("image loaded", index, status, id);
@@ -46,12 +43,6 @@ export default function Gallery() {
   return (
     <div className="container">
       <div className="gallery-body">
-        {/* <ul className="flex flex-row">
-          <li className="gallery-list-tab mx-4">AI Art</li>
-          <li className="gallery-list-tab mx-4">Photography</li>
-          <li className="gallery-list-tab mx-4">Web</li>
-          <li className="gallery-list-tab mx-4">Mobile</li>
-        </ul> */}
         <div className="gallery-container flex flex-row">
           <div className="gallery-thumbnail-library mt-4">
             {images.map((im, i) => (
@@ -83,22 +74,6 @@ export default function Gallery() {
               </Box>
             </Modal>
           </div>
-          {/* <div className="gallery-section-list flex flex-col">
-            <div className="mt-4"></div>
-            {!loading ? (
-              <img
-                className="display-box"
-                src={currentImage}
-                ref={selectedImage}
-              />
-            ) : (
-              <div className="display-box justify-center items-center">
-                <div className="flex display-box justify-center items-center">
-                  <Squares color="#CC0000" />
-                </div>
-              </div>
-            )}
-          </div> */}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { ReactDOM, createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
@@ -17,7 +17,7 @@ import Home from "./pages/Home";
 import Darkroom from "./pages/Darkroom";
 import Gallery from "./pages/Gallery";
 import CodeJournal from "./pages/CodeJournal";
-// const ThemeContext = React.createContext();
+import LoadingOverlay from "./shared/LoadingOverlay";
 
 const location = "/";
 
